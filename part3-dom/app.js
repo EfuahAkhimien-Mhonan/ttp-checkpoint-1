@@ -39,6 +39,13 @@ console.log("[ SECTION A — Selecting Elements ]")
 
 
 // A4.
+// Use querySelectorAll to select all elements with the class "list-item".
+// Loop over the result and log the text content of each one.
+//
+// Note: the result is a NodeList, not a plain array.
+
+
+// A5.
 // EXPLAIN: What is the difference between getElementById and querySelector?
 //          What does querySelectorAll return?
 //          How is that different from a regular array?
@@ -65,8 +72,8 @@ console.log("\n[ SECTION B — Reading and Changing the DOM ]")
 
 
 // B4.
-// Select the div with the id "output-box" and use the style property
-// to give it a background color of your choice.
+// Select the div with the id "output-box" and give it a background color of your choice.
+// Do this with JavaScript — not by editing the CSS file.
 
 
 // B5.
@@ -94,6 +101,15 @@ console.log("\n[ SECTION C — Responding to Events ]")
 
 
 // C3.
+// Select the h1 with the id "main-heading" and add the class "active" to it.
+// Log the element's class list to confirm the class is there.
+//
+// Then select one of the list items that already has the class "list-item".
+// Remove that class from it.
+// Log its class list to confirm the class is gone.
+
+
+// C4.
 // EXPLAIN: What is an event listener?
 //          Why can't you write the code outside of a function
 //          and expect it to run when the button is clicked?
@@ -101,7 +117,7 @@ console.log("\n[ SECTION C — Responding to Events ]")
 //          answer:
 
 
-// C4.
+// C5.
 // EXPLAIN: What does classList.toggle do?
 //          What does classList.add do? What does classList.remove do?
 //          How are they different from setting element.className directly?
@@ -132,8 +148,13 @@ console.log("\n[ SECTION D — Creating and Adding to the DOM ]")
 
 
 // D3.
+// Select the p with the id "output-text" and remove it from the page entirely.
+// After this runs, the element should no longer be visible.
+
+
+// D4.
 // EXPLAIN: What does createElement do?
-//          What does append do?
+//          What does appendChild do? What does remove() do?
 //          When does the newly created element actually appear on the page?
 //
 //          answer:
