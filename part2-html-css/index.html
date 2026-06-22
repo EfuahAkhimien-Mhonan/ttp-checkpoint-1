@@ -54,10 +54,43 @@
         Both rules target the same paragraph.
         Which color will the paragraph actually be? Why does one rule win?
 
-        Answer:
+        Answer: The paragraph will be tomato becuase the id selector holds more 
+        weight than the element selector. Since a single element has more than one 
+        rule, CSS specificity is used to determine which rule wins.
 
 -->
 
 <!-- ============================================================ -->
 <!-- Write your complete HTML page starting below this line      -->
 <!-- ============================================================ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Checkpoint</title>
+  <link rel="stylesheet" href="look.css">
+  <!-- The link to a stylesheet goes in the head and not the body because the browser 
+   reads the head first. This allows the CSS to load and be applied before the page 
+   content is shown, so the page is style correctly when it appears.    -->
+</head>
+<body>
+  <h1>Efuah's Checkpoint Page</h1>
+  <p id="intro">Welcome to my amazing checkpoint page! Idk what else to say.</p>
+  <h2 id="section-title">Another Section</h2>
+  <ul>
+    <li class="highlight">One</li>
+    <li>Two</li>
+    <li class="highlight">Three</li>
+    <li>Four</li>
+  </ul>
+  <!-- A class can be given to multiple elements, while an id is given to one unique element.
+       Yes two elements on the same page can share the same class.
+       No, two elements on the same page cannot share the same id. -->
+  <div id="box">Crumbl Cookies</div>
+  <btn id="click-me">Click Me</btn>
+  
+</body>
+</html>

@@ -12,12 +12,19 @@
   TASK A
   Using the body TAG selector, set a background color on the page.
 */
+body {
+  background-color: lightgreen;
+}
 
 
 /*
   TASK B
   Using the h1 TAG selector, set a font size and a color.
 */
+h1 {
+  font-size: 55px;
+  color: palegoldenrod;
+}
 
 
 /*
@@ -25,6 +32,10 @@
   Using the CLASS selector, style the list items with the highlight class.
   Give them a background color and some padding so they stand out.
 */
+.highlight {
+  background-color: greenyellow;
+  padding: 0.05rem;
+}
 
 
 /*
@@ -32,6 +43,9 @@
   Using the ID selector, give the h2 with the id section-title a color that is
   different from the h1 and different from body text.
 */
+#section-title {
+  color:paleturquoise;
+}
 
 
 /*
@@ -47,8 +61,19 @@
            Write your answer as a comment below this rule.
 
 
-           answer:
+           answer: Padding is inside the element, it's the space between the content 
+           and the border. Margin is outside the element, it the space between the 
+           element and other elements on the page.
 */
+#box {
+  box-sizing: border-box;
+  width: 300px;
+  height: 150px;
+  border: 2px solid goldenrod;
+  padding:20px;
+  margin:15px 30px;
+  
+}
 
 
 /*
@@ -57,6 +82,13 @@
   It must have a background color, a text color, a border, padding,
   and a cursor: pointer that turns into a pointer when the user hovers over it.
 */
+#click-me {
+  background-color: lightblue;
+  color: palegoldenrod;
+  border: 2px solid white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 
 /*
@@ -72,5 +104,17 @@
            What is CSS specificity and how does it determine which rule wins?
            Write your answer as a comment below these two rules.
 
-           answer:
+           answer: The #intro rule won because of CSS specificity. When multiple rules 
+           are applied to an HTML element, CSS specificity is the method browsers use 
+           to determine which rule to use. IDs hold the most weight, followed by classes, 
+           which is followed by element selectors. The specificity scores are compared from 
+           left to right. In this case, we have an element selctor and an id selector. Since 
+           the id holds more weight the browser will apply that rule over the element selector.
 */
+p {
+  color: lightcoral;
+}
+
+#intro {
+  color: lightseagreen;
+}

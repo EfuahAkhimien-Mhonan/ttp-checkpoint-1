@@ -14,8 +14,12 @@
               tag here WITHOUT defer?
               Write your answer as a comment below this line.
 
-              answer: 
+              answer: The defer attribute tells the browser to wait until the HTML has 
+              fully loaded before running the JavaScript file. Without defer, the browser 
+              may try to run the JavaScript before all of the HTML elements have been loaded, 
+              which could cause errors when selecting or modifying elements on the page.
     -->
+  <script src="app.js" defer></script>
   </head>
   <body>
 
